@@ -1,3 +1,24 @@
+@media (max-width: 1550px) {
+    .promo {
+        &__header {
+            width: 560px;
+        }
+        &__title {
+            font-size: 80px;
+            letter-spacing: 2px;
+        }
+        &__next {
+            margin-top: 20px;
+        }
+        &__subheader, &__icons, &__desc {
+            margin-top: 30px;
+        }
+    }
+    .button {
+        margin-top: 30px;
+    }
+}
+
 @media (max-width: 1400px) {
     .header {
         padding: 0 40px 0 70px;
@@ -26,19 +47,73 @@
             flex-basis: 20%;
         }
     }
+    .promo {
+        &__header {
+            width: 465px;
+        }
+        &__title {
+            font-size: 65px;
+            letter-spacing: 1.5px;
+        }
+        &__next {
+            margin-top: 10px;
+        }
+        &__subheader, &__icons, &__desc {
+            margin-top: 20px;
+        }
+    }
+    .button {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 992px) {
     .header {
         &__logo {
-            flex-basis: 15%;
+            flex-basis: 25%;
         }
         &__navigation {
             flex-basis: 60%;
         }
         &__icons {
-            flex-basis: 10%;
+            flex-basis: 15%;
         }
+    }
+    .promo {
+        &__item {
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(to bottom, #c6cbce, #c7c8cc);
+        }
+        &__img {
+            display: none;
+        }
+        &__block {
+            padding: 40px 0;
+            position: relative;
+            width: 70%;
+            height: auto;
+            margin-left: 3.8%;
+        }
+        &__header {
+            width: 530px;
+        }
+        &__title {
+            font-size: 75px;
+            letter-spacing: 2px;
+        }
+        &__subheader, &__icons, &__desc {
+            margin-top: 30px;
+        }
+        &__desc {
+            width: 100%;
+        }
+    }
+    .button {
+        margin-top: 30px;
+    }
+    .owl-carousel .owl-item .promo__img {
+        display: none;
     }
 }
 
@@ -46,7 +121,7 @@
     .header {
         min-height: 75px;
         &__logo {
-            flex-basis: 20%;
+            flex-basis: 25%;
         }
         &__navigation {
             display: none;
@@ -56,6 +131,23 @@
         }
         &__hamburger {
             display: block;
+        }
+    }
+    .promo {
+        &__social {
+            width: 5%;
+        }
+        &__block {
+            width: 80%;
+            height: auto;
+            margin-left: 5%;
+        }
+        &__header {
+            width: 455px;
+        }
+        &__title {
+            font-size: 65px;
+            letter-spacing: 1.5px;
         }
     }
 }
@@ -75,6 +167,36 @@
             span {
                 font-size: 9px;
             }
+        }
+    }
+    .promo {
+        &__social {
+            width: 7%;
+        }
+        &__block {
+            margin-left: 7%;
+        }
+        &__header {
+            width: 255px;
+        }
+        &__title {
+            font-size: 36px;
+            letter-spacing: 1px;
+        }
+        &__arrows {
+            top: -12px;
+            right: 6%;
+            width: 35px;
+        }
+        &__prev, &__next {
+            font-size: 10px;
+            img {
+                width: 35px;
+                height: 5px;
+            }
+        }
+        &__next {
+            margin-top: 8px;
         }
     }
 }

@@ -1,9 +1,17 @@
-@import 'libs/bootstrap-reboot.scss';
-@import 'libs/fonts.scss';
+@import 'libs/bootstrap-reboot';
+@import 'carousel/owl.carousel';
+@import 'libs/fonts';
 
 * {
     font-family: 'Montserrat', sans-serif;
 }
+
+.main {
+    max-width: 1920px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
 .container {
     max-width: 1200px;
     min-width: 320px;
@@ -11,6 +19,7 @@
 }
 
 @import 'blocks/header';
-
+@import 'blocks/promo';
+@import 'blocks/buttons';
 
 @import 'blocks/media';
