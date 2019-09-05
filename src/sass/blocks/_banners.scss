@@ -1,7 +1,7 @@
 .banner {
     margin-top: 25px;
     min-height: 250px;
-    background: url('../img/banners/banner_offer.jpg') center (center/cover) no-repeat #00b7d9;
+    background: url('../img/banners/banner_1.jpg') center (center/cover) no-repeat #00b7d9;
     display: flex;
     justify-content: flex-end;
     &__block {
@@ -9,18 +9,16 @@
         margin-right: 100px;
         text-align: center;
         padding: 55px 0 45px;
+        text-transform: uppercase;
     }
-    &__title {
-        font-size: 26px;
-        font-weight: 600;
-        letter-spacing: 2.6px;
-        color: #2d2b27;
-    }
-    &__subtitle {
-        margin-top: 20px;
-        font-size: 14px;
-        font-weight: 600;
-        letter-spacing: 5.6px;
-        color: #1a1a1a;
+    &_left {
+        margin-top: 90px;
+        min-height: 250px;
+        background: url('../img/banners/banner_2.jpg') center (center/cover) no-repeat #d7dbd5;
+        justify-content: flex-start;
+        .banner__block {
+            margin-right: 0;
+            margin-left: 100px;
+        }
     }
 }

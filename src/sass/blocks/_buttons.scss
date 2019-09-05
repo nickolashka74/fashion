@@ -4,7 +4,6 @@
     border-radius: 19.5px;
     background-color: #171717;
     font-size: 8.5px;
-    line-height: 1.53;
     letter-spacing: 0.51px;
     text-align: center;
     color: #ffffff;
@@ -31,7 +30,39 @@
         font-size: 12px;
         letter-spacing: 2.16px;
         text-align: center;
+        text-transform: uppercase;
         color: #2b2b2b;
         border: 0;
+        &--left {
+            background-color: #171717;
+            color: #fff;
+        }
+    }
+    &_product {
+        width: 174px;
+        height: 59px;
+        border-radius: 29.5px;
+        font-size: 13px;
+        letter-spacing: 0.78px;
+        position: absolute;
+        bottom: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &_features {
+        display: block;
+        margin: 0 auto;
+        margin-top: 45px;
+        width: 174px;
+        height: 59px;
+        border-radius: 29.5px;
+        border: 2px solid #d9c8aa;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.6px;
+        text-align: center;
+        color: #1a1a1a;
+        background-color: #fff;
+        text-transform: uppercase;
     }
 }

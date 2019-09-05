@@ -2,15 +2,14 @@ $(document).ready(function(){
     $('.slider-1').owlCarousel({
         loop:true,
         dots:false,
-        autoHeight: true,
-        animateOut: 'fadeOut',
+        animateOut:'fadeOut',
         responsiveClass:true,
         responsive:{
             0:{
-                items:1,
+                items:1
             },
             1920:{
-                items:1,
+                items:1
             }
         }
     });
@@ -23,6 +22,49 @@ $(document).ready(function(){
 	});
 	$(".promo__prev").click(function(){
 		owl.trigger("prev.owl.carousel");
-	});
+    });
+    
+    $('.slider-2').owlCarousel({
+        loop:true,
+        nav:true,
+        dots:false,
+        margin:32,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+                dots:true
+            },
+            577:{
+                items:2
+            },
+            992:{
+                items:3
+            }
+        }
+    });
+
+    $('.slider-3').owlCarousel({
+        loop:true,
+        nav:true,
+        dots:false,
+        margin:32,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            577:{
+                items:2
+            },
+            768:{
+                items:3
+            },
+            992:{
+                items:4
+            }
+        }
+    });
 
   });

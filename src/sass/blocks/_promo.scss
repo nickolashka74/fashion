@@ -61,23 +61,39 @@
         right: 14%;
         width: 45px;
     }
+    &__sprites {
+        background-image: url(../icons/arrows/promo);
+        background-repeat: no-repeat;
+        display: block;
+    }
     &__prev, &__next {
         font-size: 12px;
         font-weight: 600;
         letter-spacing: 2.16px;
-        color: #ffffff;
+        color: #171717;
         text-transform: uppercase;
         text-align: center;
         cursor: pointer;
-        img {
-            display: block;
-            width: 39px;
-            height: 6px;
+        width: 39px;
+        height: 6px;
+        background-position: -5px -53px;
+        position: relative;
+        span {
+            position: absolute;
+            left: 0;
+            top: -15px;
+        }
+        &:hover {
+            color: #ffffff;
+            background-position: -5px -37px;
         }
     }
     &__next {
-        margin-top: 23px;
-        color: #171717;
+        margin-top: 38px;
+        background-position: -5px -21px;
+        &:hover {
+            background-position: -5px -5px;
+        }
     }
     &__subheader {
         margin-top: 40px;

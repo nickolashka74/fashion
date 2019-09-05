@@ -1,18 +1,5 @@
 .offers {
     margin-top: 80px;
-    &__link {
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
-        li {
-            a {
-                font-size: 19px;
-                font-weight: 600;
-                letter-spacing: 1.9px;
-                color: #2d2b27;
-            }
-        }
-    }
     &__wrapper {
         margin-top: 54px;
         display: flex;

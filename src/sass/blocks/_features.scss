@@ -1,0 +1,50 @@
+.features {
+    margin-top: 60px;
+    &__desc {
+        margin-top: 30px;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: normal;
+        text-align: left;
+        color: #1a1a1a;
+    }
+    &__brand {
+        margin-top: 10px;
+        font-weight: 500;
+        color: #898989;
+    }
+    &__price {
+        margin-top: 10px;
+        font-weight: 700;
+        span {
+            font-weight: 500;
+            text-decoration: line-through;
+            margin-right: 10px;
+        }
+    }
+    .owl-nav {
+        button.owl-prev, button.owl-next {
+            position: absolute;
+            top: 50%;
+            left: -80px;
+            transform: translateY(-130%);
+            background: url('../icons/arrows/features') -5px -64px no-repeat;
+            width: 49px;
+            height: 49px;
+            &:hover {
+                background-position: -64px -64px;
+            }
+            span {
+                display: none;
+            }
+        }
+        button.owl-next {
+            left: auto;
+            right: -80px;
+            background: url('../icons/arrows/features') -5px -5px no-repeat;
+            &:hover {
+                background-position: -64px -5px;
+            }
+        }
+    }
+}
