@@ -1,0 +1,32 @@
+.footer {
+    padding: 35px 0 40px;
+    &__copyright {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 2.14;
+        color: #727272;
+        text-align: center;
+    }
+    &__logo {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 145px;
+        a {
+            color: #000000;
+            font-size: 28px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        span {
+            display: block;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.77px;
+            text-align: center;
+        }
+    }
+}

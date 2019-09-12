@@ -67,4 +67,37 @@ $(document).ready(function(){
         }
     });
 
+    $('.slider-4').owlCarousel({
+        loop:true,
+        nav:false,
+        dots:true,
+        margin:26,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            901:{
+                items:2,
+                dots:false,
+                nav:true
+            }
+        }
+    });
+
+    const iconSearch = document.querySelector('.header__search');
+    const body = document.querySelector('body');
+
+    iconSearch.addEventListener('click', function(event) {
+        event.stopPropagation();
+        this.classList.add('header__search--active');
+    })
+
+    body.addEventListener('click', function(event) {
+        iconSearch.classList.remove('header__search--active');
+    })
+
   });
