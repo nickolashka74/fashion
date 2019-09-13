@@ -38,7 +38,9 @@
 
 @media (max-width: 1400px) {
     .header {
-        padding: 0 40px 0 70px;
+        &__main {
+            padding: 0 40px 0 70px;
+        }
         &__logo {
             flex-basis: 20%;
         }
@@ -85,7 +87,9 @@
 
 @media (max-width: 1200px) {
     .header {
-        padding: 0 20px;
+        &__main {
+            padding: 0 20px;
+        }
         &__logo {
             flex-basis: 20%;
         }
@@ -254,6 +258,12 @@
 @media (max-width: 768px) {
     .header {
         min-height: 75px;
+        &__fixed {
+            min-height: 75px;
+        }
+        &__main {
+            min-height: 75px;
+        }
         &__logo {
             flex-basis: 25%;
         }
@@ -295,6 +305,12 @@
 @media (max-width: 576px) {
     .header {
         min-height: 65px;
+        &__fixed {
+            min-height: 65px;
+        }
+        &__main {
+            min-height: 65px;
+        }
         &__logo {
             flex-basis: 49%;
         }
