@@ -60,6 +60,7 @@
         justify-content: flex-end;
         align-items: center;
         flex-basis: 40%;
+        height: 15px;
         position: relative;
     }
     &__cart {
@@ -129,14 +130,29 @@
     &__hamburger {
         display: none;
         margin-left: 25px;
-        width: 18px;
+        width: 22px;
         span {
             display: block;
             background-color: #171717;
             margin-top: 3px;
             height: 2px;
+            transition: .5s all;
             &:first-child {
                 margin-top: 0;
+            }
+        }
+        &_active {
+            span {
+                margin-top: -2px;
+                &:nth-child(1) {
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: rotate(45deg);
+                }
             }
         }
     }

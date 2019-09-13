@@ -88,6 +88,8 @@ $(document).ready(function(){
         }
     });
 
+    //Search place
+
     const iconSearch = document.querySelector('.header__search');
     const body = document.querySelector('body');
 
@@ -98,6 +100,25 @@ $(document).ready(function(){
 
     body.addEventListener('click', function(event) {
         iconSearch.classList.remove('header__search--active');
+    })
+
+    //Hamburger
+
+    
+    const menu = document.querySelector('.header__menu'),
+    menuItem = document.querySelectorAll('.header__menu > li'),
+    hamburger = document.querySelector('.header__hamburger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('header__hamburger_active');
+        menu.classList.toggle('header__menu_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('header__hamburger_active');
+            menu.classList.toggle('header__menu_active');
+        })
     })
 
   });
