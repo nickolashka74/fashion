@@ -50,7 +50,7 @@
         }
         &__search {
             input {
-                right: 30px;
+                right: -8px;
             }
         }
     }
@@ -94,11 +94,6 @@
         }
         &__icons {
             flex-basis: 20%;
-        }
-        &__search {
-            input {
-                right: 12px;
-            }
         }
     }
     .promo {
@@ -273,8 +268,8 @@
         }
         &__search {
             input {
-                right: 55px;
-                top: 21px;
+                right: 34px;
+                top: -5px;
             }
         }
     }
@@ -310,11 +305,6 @@
             font-size: 20px;
             span {
                 font-size: 9px;
-            }
-        }
-        &__search {
-            input {
-                top: 16px;
             }
         }
     }
