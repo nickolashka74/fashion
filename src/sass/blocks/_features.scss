@@ -1,5 +1,8 @@
 .features {
     margin-top: 60px;
+    &__title {
+        display: none;
+    }
     &__desc {
         margin-top: 30px;
         font-size: 15px;

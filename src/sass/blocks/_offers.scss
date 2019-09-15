@@ -1,5 +1,8 @@
 .offers {
     margin-top: 80px;
+    &__title {
+        display: none;
+    }
     &__wrapper {
         margin-top: 54px;
         display: flex;
